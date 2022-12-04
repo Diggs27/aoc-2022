@@ -29,6 +29,7 @@ fn main() {
             }
         }
     }
+    vec.sort();
     for item in vec.iter(){
         println!("Total {}", item);
     }
