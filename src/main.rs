@@ -1,10 +1,10 @@
 use std::fs::File;
 use std::io::{self, BufRead};
 use std::path::Path;
-
+mod aoc2;
 
 fn main() {
-    aoc2();
+    aoc2::run();
 }
 
 fn aoc2(){
