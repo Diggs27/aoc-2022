@@ -46,7 +46,7 @@
         return result;
     }
 
-    fn strategy_one(opp: &str, play: &str) -> (i32) {
+    fn strategy_one(opp: &str, play: &str) -> i32 {
         let mut res: i32 = 0;
         match opp {
             "A" => { match play { 
@@ -76,7 +76,7 @@
     }
 
     
-    fn strategy_two(opp: &str, play: &str) -> (i32) {
+    fn strategy_two(opp: &str, play: &str) -> i32 {
         let mut res: i32 = 0;
         match opp {
             "A" => { match play { 

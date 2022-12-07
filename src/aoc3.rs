@@ -52,10 +52,10 @@ pub fn run_aoc3_part2() -> i32 {
 
 fn get_char_total(input: char) -> i32 {
     let mut s: i32 = 0;
-    if(input.is_uppercase())  {
+    if input.is_uppercase() {
         s = input as i32 -64 +26;
     }
-    if(input.is_lowercase())  {
+    if input.is_lowercase()  {
         s = input as i32 -96;
     }
     return s;
@@ -82,14 +82,14 @@ pub fn run_aoc3()-> i32{
                 for i in part_1.chars(){
                     if part_2.contains(i) && !overlapping_chars.contains(&i) {
                         overlapping_chars.push(i);
-                        if(i.is_uppercase())  {
+                        if i.is_uppercase()  {
                             println!("{}", i);
                             println!("{}", i as i32 -64 +26);
                             let s: i32 = i as i32 -64 +26;
                             total = total + s;
                             println!("Total {}", total);
                         }
-                        if(i.is_lowercase())  {
+                        if i.is_lowercase()   {
                             println!("{}", i);
                             println!("{}", i as i32 -96);
                             let s: i32 = i as i32 -96;
