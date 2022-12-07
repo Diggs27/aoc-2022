@@ -3,8 +3,9 @@ mod aoc2;
 mod aoc1;
 mod aoc3;
 mod aoc4;
+mod aoc5;
 
 fn main() {
-    aoc4::run();
+    aoc5::run();
 }
 
